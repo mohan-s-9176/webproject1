@@ -493,41 +493,42 @@ body {
     display: flex;
     flex-direction: column;
 }
-.learn-card {
-    width: 1280px;
-    height: 201px;
 
-    box-sizing: border-box;
-
-    background: #0A1628;
-
-    border: 2px solid #00FF88;
-
-    display: flex;
-    align-items: center;
-
-    padding: 56px 48px;
-}
 .learn-card:first-child {
     border-radius: 25px 25px 0 0;
 }
 .learn-card:last-child {
     border-radius: 0 0 25px 25px;
 }
+.learn-card {
+    width: 1280px;
+    height: 201px;
+
+    background: #0A1628;
+
+    border: 2px solid #00FF88;
+    border-radius: 25px;
+
+    box-sizing: border-box;
+}
+
 .learn-card-content {
     width: 1184px;
     height: 91px;
 
+    margin: 56px 48px;
+
     display: flex;
     align-items: center;
 
-    gap: 40px;
+    gap: 54px;
 }
+
+
+/* 01 */
 .learn-number {
     width: 36px;
     height: 37px;
-
-    flex-shrink: 0;
 
     color: #FFFFFF;
 
@@ -537,8 +538,12 @@ body {
     line-height: 150%;
     letter-spacing: -2%;
 }
+
+
+/* Web Vulnerabilities */
 .learn-card-title {
     width: 211px;
+    height: 78px;
 
     color: #FFFFFF;
 
@@ -548,8 +553,12 @@ body {
     line-height: 130%;
     letter-spacing: -2%;
 
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
 }
+
+
+/* Description */
 .learn-card-description {
     width: 371px;
     height: 80px;
@@ -562,23 +571,28 @@ body {
     line-height: 180%;
     letter-spacing: -2%;
 
+    display: flex;
+    align-items: center;
+}
+
+
+/* Handshake + Globe together */
+.learn-visual {
+    width: 347px;
+    height: 91px;
+
+    position: relative;
+
     flex-shrink: 0;
 }
+
 .learn-image {
     width: 295px;
     height: 91px;
 
     border-radius: 50px;
 
-    background: linear-gradient(
-        90deg,
-        #FFFFFF 0%,
-        #888888 100%
-    );
-
     overflow: hidden;
-
-    flex-shrink: 0;
 }
 
 .learn-image img {
@@ -589,23 +603,1371 @@ body {
 
     display: block;
 }
+
+
+/* Globe */
 .learn-icon {
     width: 91px;
     height: 91px;
 
-    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
 
-    border-radius: 45.5px;
-
-    background: #FFFFFF;
-
-    border: 1px solid #BBFED2;
+    border-radius: 50%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    overflow: hidden;
+}
+
+.learn-icon img {
+    width: 91px;
+    height: 91px;
+
+    object-fit: contain;
+    display: block;
+}
+
+.reminder-section {
+    width: 869px;
+    height: 660px;
+
+    margin: 100px auto 0;
+
+    background-color: #0A1628;
+
+    position: relative;
+
+    overflow: hidden;
+
+    font-family: Inter, sans-serif;
+}
+.happy-users {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 135px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2px;
+
+    color: #A2A2A9;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: -5%;
+
+    white-space: nowrap;
+}
+
+.happy-users img {
+    width: 15px;
+    height: 11px;
+
+    object-fit: contain;
+}
+.reminder-title {
+    width: 670px;
+
+    position: absolute;
+    top: 35px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: white;
+    font-family: Inter, sans-serif;
+    font-size: 99px;
+    font-weight: 500;
+    line-height: 106px;
+    letter-spacing: -5%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Keep the text behind the offer box */
+    z-index: 1;
+}
+
+.reminder-title span {
+    display: block;
+}
+.reminder-offer {
+    position: absolute;
+
+    top: 178px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 536.5px;
+    height: 163px;
+
+    box-sizing: border-box;
+
+    background-color: #00FF88;
+
+    border-radius: 34.44px;
+
+    box-shadow: 0px 0px 42.17px 5.36px #00FF88BF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 5;
+}
+.reminder-offer-title {
+    width: 468px;
+    height: 42px;
+
+    color: #132034;
+
+    font-size: 22.96px;
+    font-weight: 600;
+
+    line-height: 41.33px;
+
+    letter-spacing: 18%;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+.countdown {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 4px;
+}
+.countdown-box {
+    width: 105.6px;
+    height: 82.65px;
+
+    box-sizing: border-box;
+
+    background-color: #2C2B29;
+
+    border-radius: 17.6px;
+
+    box-shadow: -3.83px 3.06px 3.06px 0px #00000040;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+}
+.countdown-box span {
+    font-size: 39.8px;
+    font-weight: 600;
+
+    line-height: 81.13px;
+
+    letter-spacing: -5%;
+
+    text-align: center;
+}
+.pm-box {
+    position: relative;
+}
+
+.pm-box small {
+    position: absolute;
+
+    top: 14px;
+    right: 12px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #FFFFFF;
+}
+.reminder-register-btn {
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 450px;
+    height: 71px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        90deg,
+        #00FF88 27.78%,
+        #00AAFF 134.11%
+    );
+
+    color: #000000;
+
+    font-family: Inter, sans-serif;
+
     font-size: 30px;
+    font-weight: 600;
+
+    line-height: 100%;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+
+.graph-lines {
+    position: absolute;
+
+    width: 38px;
+    height: 388px;
+
+    top: 84px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    z-index: 10;
+}
+
+.left-graph {
+    left: 0;
+}
+
+.right-graph {
+    right: 0;
+
+    transform: scaleX(-1);
+}
+
+.graph-lines span {
+    display: block;
+
+    height: 1px;
+
+    background-color: #00FF88;
+}
+
+.graph-lines .small {
+    width: 20px;
+}
+
+.graph-lines .big {
+    width: 35px;
+}
+.graph-label {
+    position: absolute !important;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: auto !important;
+    height: auto !important;
+
+    background-color: #0A1628 !important;
+
+    color: white !important;
+
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    padding: 2px 4px;
+
+    z-index: 20;
+}
+.right-graph .graph-label {
+    transform: translate(-50%, -50%) scaleX(-1);
+}
+
+/* ============================= */
+/* EXPERTS SECTION */
+/* ============================= */
+
+.experts-section {
+    width: 1276px;
+    height: 838px;
+
+    margin: 100px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 35px;
+
+    font-family: Inter, sans-serif;
+}
+
+
+/* Heading */
+
+.experts-title {
+    width: 446px;
+    height: 130px;
+
+    color: #BBFED2;
+
+    font-size: 54px;
+    font-weight: 600;
+
+    line-height: 100%;
+    letter-spacing: 1%;
+
+    text-align: center;
+
+    background: linear-gradient(
+        89.99deg,
+        #BBFED2 32.46%,
+        #00FF88 99.99%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.experts-title strong {
+    display: block;
+    font-weight: 600;
+}
+
+
+/* Description */
+
+.experts-description {
+    width: 810px;
+    height: 96px;
+
+    color: #FFFFFF;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    line-height: 48px;
+    letter-spacing: -2%;
+
+    text-align: center;
+}
+
+
+/* Cards container */
+
+.expert-cards {
+    width: 1276px;
+    height: 557px;
+
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+}
+
+
+/* Individual card */
+
+.expert-card {
+    width: 412px;
+    height: 557px;
+
+    position: relative;
+
+    border-radius: 24.18px;
+
+    overflow: hidden;
+
+    border: 1.93px solid rgba(0, 201, 81, 0.25);
+
+    box-sizing: border-box;
+
+    background-color: #0A1628;
+
+    padding-top: 0;
+}
+
+
+/* ============================= */
+/* TOP HALF */
+/* ============================= */
+
+.expert-top {
+    width: 100%;
+    height: 321px;
+
+    background: rgba(52, 71, 133, 0.6);
+
+    border-top-left-radius: 24.18px;
+    border-top-right-radius: 24.18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+
+/* Profile image */
+
+.expert-image {
+    width: 136.36px;
+    height: 136.36px;
+
+    margin-top: 20px;
+
+    border: none;
+    padding: 0;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    box-shadow: none;
+}
+
+.expert-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* Day badge */
+
+.day-badge {
+    position: absolute;
+
+    top: 135px;
+
+    padding: 3px 10px;
+
+    border-radius: 8px;
+
+    background-color: #00AAFF;
+
+    color: white;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 100%;
+}
+
+
+/* Expert name */
+
+.expert-name {
+    width: 241.78px;
+
+    margin-top: 15px;
+
+    color: #FFFFFF;
+
+    font-size: 29.01px;
+    font-weight: 700;
+
+    line-height: 100%;
+    letter-spacing: -2%;
+
+    text-align: center;
+}
+
+
+/* Expert role */
+
+.expert-role {
+    width: 241.78px;
+
+    margin-top: 10px;
+
+    color: #FFFFFF;
+
+    font-size: 21.28px;
+    font-weight: 500;
+
+    line-height: 100%;
+    letter-spacing: -2%;
+
+    text-align: center;
+}
+
+
+/* ============================= */
+/* BOTTOM HALF */
+/* ============================= */
+
+.expert-bottom {
+    width: 100%;
+    height: 236px;
+
+    background-color: rgba(52, 52, 52, 0.8);
+
+    border-bottom-left-radius: 22.24px;
+    border-bottom-right-radius: 22.24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Company */
+
+.company-badge {
+    margin-top: 35px;
+
+    min-width: 94.75px;
+    height: 48.36px;
+
+    padding-left: 18.38px;
+    padding-right: 18.38px;
+
+    box-sizing: border-box;
+
+    border-radius: 7.74px;
+
+    border: 0.97px solid #A17FC1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    font-size: 17.41px;
+    font-weight: 500;
+
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+
+
+/* Experience */
+
+.experience {
+    margin-top: 30px;
+
+    color: #E1C6F9;
+
+    font-size: 19.34px;
+    font-weight: 500;
+
+    line-height: 100%;
+    letter-spacing: -2%;
+
+    text-align: center;
+}
+
+
+/* Stars */
+.stars {
+    margin-top: 20px;
+
+    display: flex;
+
+    gap: 4px;
+
+    color: #00FF88;
+
+    font-size: 20px;
+
+    line-height: 1;
+}
+
+.stars span {
+    display: inline-block;
+}
+
+/* ================================= */
+/* 3-DAY TRANSFORMATION JOURNEY */
+/* ================================= */
+
+.journey-section {
+    width: 1440px;
+    height: 1495px;
+
+    margin: 100px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 50px;
+
+    font-family: Inter, sans-serif;
+}
+
+
+/* ============================= */
+/* JOURNEY HEADING */
+/* ============================= */
+
+.journey-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Title */
+
+.journey-title {
+    width: 676px;
+    height: 130px;
+
+    color: #BBFED2;
+
+    font-size: 54px;
+    font-weight: 600;
+
+    line-height: 100%;
+    letter-spacing: 1%;
+
+    text-align: center;
+
+    background: linear-gradient(
+        89.99deg,
+        #BBFED2 32.46%,
+        #00FF88 99.99%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Description */
+
+.journey-description {
+    width: 1068px;
+    height: 48px;
+
+    margin-top: 20px;
+
+    color: #FFFFFF;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    line-height: 48px;
+    letter-spacing: -2%;
+
+    text-align: center;
+}
+
+
+/* ============================= */
+/* JOURNEY CONTENT */
+/* ============================= */
+
+.journey-content {
+    width: 1280px;
+    height: 427px;
 
     flex-shrink: 0;
+}
+
+
+/* ============================= */
+/* EXCLUSIVE BONUSES */
+/* ============================= */
+
+.bonuses-section {
+    width: 1280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+/* Bonuses heading */
+
+.bonuses-heading {
+    width: 1068px;
+    height: 181px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* Bonuses title */
+
+.bonuses-title {
+    width: 494px;
+    height: 65px;
+
+    color: #BBFED2;
+
+    font-size: 54px;
+    font-weight: 600;
+
+    line-height: 100%;
+    letter-spacing: 1%;
+
+    text-align: center;
+
+    background: linear-gradient(
+        89.99deg,
+        #BBFED2 32.46%,
+        #00FF88 99.99%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Bonuses description */
+
+.bonuses-description {
+    width: 856px;
+    height: 96px;
+
+    color: #FFFFFF;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    line-height: 48px;
+    letter-spacing: -2%;
+
+    text-align: center;
+}
+
+
+/* ============================= */
+/* BONUS CARDS */
+/* ============================= */
+
+.bonus-cards {
+    width: 1280px;
+    height: 206px;
+
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+}
+
+
+/* Single card */
+
+.bonus-card {
+    width: 305px;
+    height: 206px;
+
+    box-sizing: border-box;
+
+    padding: 23px 20px;
+
+    border-radius: 13px;
+
+    border: 1px solid #00FF88;
+
+    background: rgba(255, 255, 255, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* Trophy */
+
+.bonus-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonus-icon img {
+    width: 48px;
+    height: 48px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* Card content */
+
+.bonus-content {
+    width: 265px;
+    height: 98px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+/* Card title */
+
+.bonuses-title {
+    width: 499px;
+    height: 65px;
+
+    color: #BBFED2;
+
+    font-size: 54px;
+    font-weight: 600;
+
+    line-height: 65px;
+    letter-spacing: 1%;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    background: linear-gradient(
+        89.99deg,
+        #BBFED2 32.46%,
+        #00FF88 99.99%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Card description */
+
+.bonus-description {
+    width: 265px;
+    height: 66px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 22px;
+    letter-spacing: -2%;
+
+    text-align: center;
+}
+
+/* ========================================= */
+/* LAST SECTION */
+/* ========================================= */
+
+.last-section {
+    width: 1440px;
+    height: 898px;
+
+    margin: 100px auto 0;
+
+    position: relative;
+
+    background: linear-gradient(
+        241.62deg,
+        #203355 13.6%,
+        #521F84 52.07%
+    );
+
+    overflow: hidden;
+
+    font-family: Inter, sans-serif;
+}
+
+
+/* ========================================= */
+/* BIG STAR */
+/* ========================================= */
+
+/* ========================================= */
+/* BIG GREEN STAR */
+/* ========================================= */
+
+.big-green-star {
+    position: absolute;
+
+    width: 660.62px;
+    height: 804.42px;
+
+    top: 112px;
+    left: 756.41px;
+
+    object-fit: contain;
+
+    z-index: 0;
+}
+
+.big-star {
+    position: absolute;
+
+    width: 660.62px;
+    height: 804.42px;
+
+    top: 121.05px;
+    left: 766.49px;
+
+    object-fit: contain;
+
+    z-index: 1;
+}
+
+
+/* ========================================= */
+/* LEFT CONTENT */
+/* ========================================= */
+
+.last-content {
+    position: absolute;
+
+    top: 55px;
+    left: 130px;
+
+    width: 598.85px;
+
+    z-index: 2;
+}
+
+
+/* ========================================= */
+/* TOP 3 TABS */
+/* ========================================= */
+
+.offer-tabs {
+    width: 598.85px;
+    height: 36.77px;
+
+    display: flex;
+
+    gap: 23.37px;
+
+    align-items: center;
+}
+
+
+/* Individual tab */
+
+.offer-tab {
+    height: 36.35px;
+
+    border-radius: 41.54px;
+
+    padding-top: 10.38px;
+    padding-right: 12.98px;
+    padding-bottom: 10.38px;
+    padding-left: 12.98px;
+
+    box-sizing: border-box;
+
+    border: 1.73px solid #76BCD0;
+
+    background-color: #EFFAFF;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8.65px;
+
+    color: #132034;
+
+    font-size: 14.36px;
+
+    font-weight: 400;
+
+    line-height: 100%;
+
+    letter-spacing: -2%;
+
+    white-space: nowrap;
+}
+
+
+/* ========================================= */
+/* HEADING + DESCRIPTION */
+/* ========================================= */
+
+.last-offer-content {
+    width: 598.85px;
+
+    margin-top: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+/* Main heading */
+
+.last-title {
+    width: 598.85px;
+    height: 156px;
+
+    color: #BBFED2;
+
+    font-size: 64.04px;
+
+    font-weight: 600;
+
+    line-height: 100%;
+
+    letter-spacing: -2%;
+
+    background: linear-gradient(
+        182.62deg,
+        #BBFED2 50.59%,
+        #00FF88 88.75%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Description */
+
+.last-description {
+    width: 339px;
+    height: 23px;
+
+    margin-top: 18px;
+
+    color: #FFFFFF;
+
+    font-size: 19.04px;
+
+    font-weight: 500;
+
+    line-height: 100%;
+
+    letter-spacing: -2%;
+
+    text-align: center;
+}
+
+
+/* ========================================= */
+/* OFFER ENDING */
+/* ========================================= */
+
+.offer-ending {
+    width: 460.57px;
+    height: 25.83px;
+
+    margin-top: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18.65px;
+
+    color: #6A38A1;
+
+    font-size: 25.83px;
+
+    font-weight: 600;
+
+    line-height: 20.09px;
+
+    letter-spacing: -2%;
+}
+
+
+/* Lightning */
+
+.offer-ending span:first-child {
+    color: #FBBD69;
+
+    font-size: 20px;
+}
+
+
+/* ========================================= */
+/* PRICE BOXES */
+/* ========================================= */
+
+.price-boxes {
+    width: 617.89px;
+    height: 115.96px;
+
+    margin-top: 30px;
+
+    display: flex;
+
+    gap: 56.25px;
+}
+
+
+/* Single box */
+
+.price-box {
+    width: 161.83px;
+    height: 115.96px;
+
+    box-sizing: border-box;
+
+    border-radius: 25.96px;
+
+    padding-top: 22.5px;
+    padding-right: 30.29px;
+    padding-bottom: 22.5px;
+    padding-left: 30.29px;
+
+    border: 0.87px solid #00000040;
+
+    background: linear-gradient(
+        149.18deg,
+        rgba(255, 255, 255, 0.085) -23.45%,
+        rgba(255, 255, 255, 0.153) 81.32%
+    );
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4.33px;
+}
+
+
+/* Price */
+
+.price {
+    color: #FFFFFF;
+
+    font-size: 36.93px;
+
+    font-weight: 600;
+
+    line-height: 100%;
+
+    letter-spacing: 0%;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* Small text */
+
+.price-label {
+    color: #FFFFFF;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    line-height: 100%;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* ========================================= */
+/* REGISTER BUTTON */
+/* ========================================= */
+
+.last-register-btn {
+    position: absolute;
+
+    top: 659px;
+    left: 130px;
+
+    width: 510px;
+    height: 92.06px;
+
+    border: none;
+
+    border-radius: 11.41px;
+
+    background: linear-gradient(
+        90deg,
+        #00FF88 27.78%,
+        #00AAFF 134.11%
+    );
+
+    color: #000000;
+
+    font-family: Inter, sans-serif;
+
+    font-size: 35px;
+
+    font-weight: 600;
+
+    line-height: 100%;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    z-index: 3;
+}
+
+
+/* ========================================= */
+/* FOOTER */
+/* ========================================= */
+
+.last-footer {
+    width: 1440px;
+    height: 119px;
+
+    margin: 0 auto;
+
+    background-color: #0A1628;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+
+    font-family: Inter, sans-serif;
+
+    box-sizing: border-box;
+}
+
+
+/* Footer links */
+
+.footer-links {
+    width: 1249px;
+    height: 79px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* Left links */
+
+.footer-left {
+    width: 459px;
+
+    display: flex;
+
+    gap: 27px;
+
+    align-items: center;
+}
+
+.footer-left span {
+    color: #FFFFFF;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    line-height: 150%;
+
+    letter-spacing: -2%;
+
+    white-space: nowrap;
+}
+
+
+/* Right links */
+
+.footer-right {
+    width: 436px;
+
+    display: flex;
+
+    gap: 27px;
+
+    align-items: center;
+
+    justify-content: flex-end;
+}
+
+.footer-right span {
+    color: #FFFFFF;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    line-height: 150%;
+
+    letter-spacing: -2%;
+
+    white-space: nowrap;
+}
+
+
+/* Copyright */
+
+.copyright {
+    width: 1249px;
+    height: 22px;
+
+    color: #FFFFFF;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    line-height: 100%;
+
+    letter-spacing: 0%;
+
+    text-align: center;
 }
